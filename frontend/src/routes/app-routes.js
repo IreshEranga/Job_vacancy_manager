@@ -2,16 +2,15 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
-import UserHome from "../Components/User/UserHome";
-import Art from '../Components/User/Art';
+import Home from '../pages/home';
 
 const AppRoutes = () => {
   return (
     <>
         <Router>
             <Routes>
-                <Route path="/" element={<UserHome />} />
-                <Route path="/art" element={<Art />} />
+                <Route path="/" element={<Home />} />
+                
             </Routes>
         </Router>
     </>
