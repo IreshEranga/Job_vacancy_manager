@@ -6,13 +6,14 @@ import Button from 'react-bootstrap/Button';
 import logo from '../assets/salics.jpg';
 import {LinkContainer} from 'react-router-bootstrap';
 
+import '../pages/home/Home.css'
 
 function NavBar({ isAuthenticated, user, logout }) {
   return (
     <Navbar bg="dark" expand="lg" className="bg-body-tertiary" style={{ fontSize: '25px' , height:'150px' }}>
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src={logo} alt="logo" width={'140px'} height={'120px'} style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px'}}/>
+          <img className='logoimg' src={logo} alt="logo" style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px',width:'140px', height:'120px'}}/>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
