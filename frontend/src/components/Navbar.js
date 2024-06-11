@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,14 +9,29 @@ import {LinkContainer} from 'react-router-bootstrap';
 import '../pages/home/Home.css'
 
 function NavBar({ isAuthenticated, user, logout }) {
+
+  const [isToggled, setIsToggled] = useState(false);
+
+  const handleToggleClick = () => {
+    setIsToggled(!isToggled);
+  };
+
+  useEffect(() => {
+    const navbarCollapse = document.getElementById('navbarScroll');
+    if (isToggled) {
+      navbarCollapse.style.paddingBottom = '50px';
+    } else {
+      navbarCollapse.style.marginBottom = '0';
+    }
+  }, [isToggled]);
   return (
-    <Navbar bg="dark" expand="lg" className="bg-body-tertiary" style={{ fontSize: '25px' , height:'150px' }}>
+    <Navbar bg="dark" expand="lg" className={`bg-body-tertiary ${isToggled ? 'navbar-toggled' : ''}`} style={{ fontSize: '25px' , height:'150px' }}>
       <Container fluid>
         <Navbar.Brand href="#">
           <img className='logoimg' src={logo} alt="logo" style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px',width:'140px', height:'120px'}}/>
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggleClick}/>
         <Navbar.Collapse id="navbarScroll" style={{marginLeft:'200px'}}>
 
           <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }} navbarScroll>

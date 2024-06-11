@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
     .homevideo video{
       width: 50%;
-      margin-top: 180px;
+      margin-top: 10px;
     }
     .homevideo{
         margin-left: -280px;
@@ -21,6 +21,9 @@
         gap: 5px;
         margin-left: -10px;
     }
+    .navbar-toggled {
+        margin-bottom: 180px; /* Adjust this value as needed */
+      }
     
        
   }
