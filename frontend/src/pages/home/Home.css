@@ -10,9 +10,15 @@
         width:'50px';
         
     }
-    #navbarScroll .me-auto{
-        max-height: 50px;
-        gap: 10px;
+    .navbar-collapse .nav-link {
+        font-size: 20px;
+        height: 10px;
+        gap: 5px;
         text-align: left;
-    }
+      }
+    
+      .navbar-collapse .navbar-nav {
+        gap: 5px;
+        margin-left: -10px;
+      }
   }
