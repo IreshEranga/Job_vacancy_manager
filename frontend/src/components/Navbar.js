@@ -36,12 +36,12 @@ function NavBar({ isAuthenticated, user, logout }) {
 
           <div className="container d-flex flex-column align-items-center">
             {!isAuthenticated ? (
-              <Button variant="primary" className="m-2" href="/login" style={{marginLeft:'50px', width:'150px', height:'40px'}}>
-                Admin Login
+              <Button variant="primary" className="m-2" href="/login" style={{marginLeft:'50px', width:'100px', height:'40px'}}>
+                Login
               </Button>
             ) : (
               <div className="flex-row d-flex justify-content-center mt-5 w-100">
-                <Button variant="primary" className="col-2 m-2" href={user.role === 'ADMIN' ? '/admin' : '/supplier'}>
+                <Button variant="primary" className="col-2 m-2 btnlog" href={user.role === 'ADMIN' ? '/admin' : '/supplier'}>
                   Dashboard
                 </Button>
                 <Button variant="primary" className="col-2 m-2" onClick={logout}>
