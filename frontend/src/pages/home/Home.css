@@ -15,10 +15,14 @@
         height: 10px;
         gap: 5px;
         text-align: left;
-      }
+    }
     
       .navbar-collapse .navbar-nav {
         gap: 5px;
         margin-left: -10px;
-      }
+    }
+    .container Button{
+        width: 100px;
+    }
+       
   }
