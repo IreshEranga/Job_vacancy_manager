@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    .homevideo video{
+      width: 50%;
+      margin-top: 180px;
+    }
+    .homevideo{
+        margin-left: -280px;
+    }
+    .logoimg{
+        width:'50px';
+        
+    }
+    #navbarScroll .me-auto{
+        max-height: 50px;
+        gap: 10px;
+        text-align: left;
+    }
+  }
