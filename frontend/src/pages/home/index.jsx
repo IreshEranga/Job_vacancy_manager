@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../../components/Navbar'
 import timer from '../../assets/timer.mp4'
 import japan from '../../assets/japan.jpg'
-import Footer from '../../components/Footer'
+
 import './Home.css';
 
 
@@ -31,6 +31,25 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          <div className="imageset">
+            <div className="imageset-inner">
+              <img src={asus} alt="asus" />
+              <img src={bios} alt="bios" />
+              <img src={cjfoods} alt="cjfoods" />
+              <img src={gait} alt="gait" />
+              <img src={scala} alt="scala" />
+              <img src={systemsgo} alt="systemsgo" />
+              <img src={asus} alt="asus" />
+              <img src={bios} alt="bios" />
+              <img src={cjfoods} alt="cjfoods" />
+              <img src={gait} alt="gait" />
+              <img src={scala} alt="scala" />
+              <img src={systemsgo} alt="systemsgo" />
+            </div>
+          </div>
+
+          <Jobcard/>
 
           <br /><br /><br /><br />
         </div>

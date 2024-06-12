@@ -1,98 +1,3 @@
-/* .bodycontainerhome{
-  margin-top:50px;
-  text-align: left;
-  margin-left: 25px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.homebodyabout{
-  background-color: rgb(210, 156, 38);
-  padding: 20px;
-  margin-right: 20px;
-  border-radius: 25px;
-  border-bottom-width: 50%;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-}
-
-.imgwithpara {
-  display: flex;
-  align-items: center;
-}
-
-.imgwithpara img {
-  height: 300px;
-  width: 500px;
-  margin-left: 50px;
-  margin-right: 100px; 
-  
-}
-
-.homebodypara {
-  flex: 1; 
-  font-size: 22px;
-}
-
-
-
-
-@keyframes move {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(5px); }
-  100% { transform: translateX(0); }
-}
-
-.homebodyabout h1 b {
-  display: inline-block;
-  animation: move 2s infinite;
-  color: red;
-}
-
-@media (max-width: 600px) {
-    .homevideo video{
-      width: 50%;
-      margin-top: 10px;
-    }
-    .homevideo{
-        margin-left: -280px;
-    }
-    .logoimg{
-        width:'50px';
-        
-    }
-    .navbar-collapse .nav-link {
-        font-size: 20px;
-        height: 10px;
-        gap: 5px;
-        text-align: left;
-    }
-    
-      .navbar-collapse .navbar-nav {
-        gap: 5px;
-        margin-left: -10px;
-    }
-    .navbar-toggled {
-        margin-bottom: 180px; 
-    }
-   .imgwithpara{
-      display: inline-block;
-   }
-    .imgbg img{
-      margin-top: -1380px;
-      width: 200px;
-      height: 200px;
-      
-    }
-    .imgwithpara p{
-      margin-top: 180px;
-      margin-right: 20px;
-    }
-    .homebodyabout h1{
-      padding-top: 20px;
-    }
-       
-  } */
-
   .bodycontainerhome {
     margin-top: 50px;
     text-align: left;
@@ -127,6 +32,42 @@
   .homebodypara {
     flex: 1;
     font-size: 22px;
+  }
+
+  .imageset {
+    margin-top: 80px;
+    display: flex;
+    overflow: hidden;
+    height: 100px;
+    margin-bottom: 80px;
+  }
+  
+  .imageset-inner {
+    display: flex;
+    animation: moveImages 10s linear infinite;
+  }
+  
+  .imageset img {
+    height: 100px; 
+    margin: 0 10px;
+    border: 1px solid gray;
+  }
+
+
+
+  /*jobcard*/
+  .card-title-custom {
+    color: rgb(39, 105, 199);
+  }
+  
+  
+  @keyframes moveImages {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   
   @keyframes move {
