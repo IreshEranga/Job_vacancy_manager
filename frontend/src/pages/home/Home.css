@@ -74,18 +74,18 @@
     .navbar-toggled {
         margin-bottom: 180px; /* Adjust this value as needed */
     }
-    .imgwithpara{
-      display: block;
-     
-    }
+   .imgwithpara{
+      display: inline-block;
+   }
     .imgbg img{
-      margin-top: -1280px;
+      margin-top: -1380px;
       width: 200px;
       height: 200px;
       
     }
     .imgwithpara p{
       margin-top: 180px;
+      margin-right: 20px;
     }
     .homebodyabout h1{
       padding-top: 20px;
