@@ -8,7 +8,7 @@ import '../pages/home/Home.css';
 function Jobcard() {
   return (
     <div>
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={1} md={3} className="g-4">
         <Col>
           <Card className="card-custom">
             <Card.Img variant="top" src={office} />
@@ -31,9 +31,20 @@ function Jobcard() {
             </Card.Body>
           </Card>
         </Col>
+        <Col>
+          <Card className="card-custom">
+            <Card.Img variant="top" src={graduate} />
+            <Card.Body>
+              <Card.Title style={{ color: 'rgb(17, 55, 108)' }}>Jobs for New Graduates</Card.Title>
+              <Card.Text>
+                Jobs for New Graduates - Start your career
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
       <br />
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={1} md={3} className="g-4">
         <Col>
           <Card className="card-custom">
             <Card.Img variant="top" src="holder.js/100px160" />
