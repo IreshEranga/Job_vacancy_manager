@@ -1,9 +1,10 @@
-// src/components/Footer.js
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import '../pages/home/Home.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -21,6 +22,9 @@ const Footer = () => {
           <p>Email: info@company.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; {currentYear} SALICS. All rights reserved.</p>
       </div>
     </footer>
   );
