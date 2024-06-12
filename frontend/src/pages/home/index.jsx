@@ -9,6 +9,7 @@ import gait from '../../assets/gait.png'
 import scala from '../../assets/scala.png'
 import systemsgo from '../../assets/systemsgo.png'
 import Jobcard from '../../components/JobCard'
+import FooterHome from '../../components/FooterHome'
 
 import './Home.css';
 
@@ -59,7 +60,7 @@ const Home = () => {
 
           <br /><br /><br /><br />
         </div>
-        
+        <FooterHome/>
     </div>
   )
 }

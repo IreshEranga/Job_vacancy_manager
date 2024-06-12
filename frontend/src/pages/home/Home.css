@@ -68,6 +68,72 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust hover shadow properties if desired */
   }
   
+
+  /*footer*/
+  /* src/components/Footer.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+  margin: 10px 0;
+}
+
+.footer-left{
+  margin-left: 80px;
+}
+.footer-right{
+  margin-right: 150px;
+}
+
+.footer-left h2 {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+.footer-right p {
+  margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-left, .footer-right {
+    flex: 1;
+    text-align: left;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+}
+
   
   
   @keyframes moveImages {
