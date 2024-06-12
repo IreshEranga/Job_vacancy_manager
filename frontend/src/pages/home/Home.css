@@ -171,7 +171,6 @@
 @media (min-width: 600px) {
   .footer-content {
     flex-direction: row;
-    padding: 0px;
   }
 
   .footer-left, .footer-right {
@@ -257,6 +256,11 @@
     .homebodyabout h1 {
       padding-top: 20px;
       text-align: center;
+    }
+
+    .footer-content {
+      /*flex-direction: row;*/
+      padding: 0;
     }
   }
   
