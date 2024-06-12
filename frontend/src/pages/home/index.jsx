@@ -18,7 +18,7 @@ const Home = () => {
         <NavBar />
 
         {/* Video */}
-
+        <br/><br/>
         <div className="homevideo">
           <video width="60%" controls controlsList="nodownload" style={{marginLeft:'300px' }}>
             
