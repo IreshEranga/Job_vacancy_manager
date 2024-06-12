@@ -171,6 +171,7 @@
 @media (min-width: 600px) {
   .footer-content {
     flex-direction: row;
+    padding: 0px;
   }
 
   .footer-left, .footer-right {
