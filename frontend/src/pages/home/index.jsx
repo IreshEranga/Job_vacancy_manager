@@ -10,6 +10,7 @@ import scala from '../../assets/scala.png'
 import systemsgo from '../../assets/systemsgo.png'
 import Jobcard from '../../components/JobCard'
 import FooterHome from '../../components/FooterHome'
+import CompanyCardList from '../../components/CompanyCard'
 
 import './Home.css';
 
@@ -59,6 +60,9 @@ const Home = () => {
           <Jobcard/>
 
           <br /><br /><br /><br />
+
+          <center><h2>Our Companies</h2></center><br /><br />
+          <CompanyCardList/><br /><br />
         </div>
         <FooterHome/>
     </div>
