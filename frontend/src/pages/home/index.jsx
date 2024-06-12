@@ -2,9 +2,15 @@ import React from 'react'
 import NavBar from '../../components/Navbar'
 import timer from '../../assets/timer.mp4'
 import japan from '../../assets/japan.jpg'
+import asus from '../../assets/asuss.png'
+import bios from '../../assets/bios.png'
+import cjfoods from '../../assets/cjfoods.png'
+import gait from '../../assets/gait.png'
+import scala from '../../assets/scala.png'
+import systemsgo from '../../assets/systemsgo.png'
+import Jobcard from '../../components/JobCard'
 
 import './Home.css';
-
 
 const Home = () => {
   return (
@@ -12,7 +18,7 @@ const Home = () => {
         <NavBar />
 
         {/* Video */}
-        <br/><br/><br/>
+        <br/><br/>
         <div className="homevideo">
           <video width="60%" controls controlsList="nodownload" style={{marginLeft:'300px' }}>
             
@@ -53,7 +59,7 @@ const Home = () => {
 
           <br /><br /><br /><br />
         </div>
-        <Footer />
+        
     </div>
   )
 }
