@@ -1,4 +1,4 @@
-.bodycontainerhome{
+/* .bodycontainerhome{
   margin-top:50px;
   text-align: left;
   margin-left: 25px;
@@ -38,7 +38,7 @@
 
 @keyframes move {
   0% { transform: translateX(0); }
-  50% { transform: translateX(10px); }
+  50% { transform: translateX(5px); }
   100% { transform: translateX(0); }
 }
 
@@ -72,7 +72,7 @@
         margin-left: -10px;
     }
     .navbar-toggled {
-        margin-bottom: 180px; /* Adjust this value as needed */
+        margin-bottom: 180px; 
     }
    .imgwithpara{
       display: inline-block;
@@ -91,4 +91,103 @@
       padding-top: 20px;
     }
        
+  } */
+
+  .bodycontainerhome {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
+  
+  .homebodyabout {
+    background-color: rgb(210, 156, 38);
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    border-bottom-width: 50%;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+  }
+  
+  .imgwithpara {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .imgwithpara img {
+    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 15px;
+  }
+  
+  .homebodypara {
+    flex: 1;
+    font-size: 22px;
+  }
+  
+  @keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .homebodyabout h1 b {
+    display: inline-block;
+    animation: move 2s infinite;
+    color: red;
+  }
+  
+  @media (max-width: 600px) {
+    .homevideo video {
+      width: 50%;
+      margin: 10px 0;
+    }
+  
+    .homevideo {
+      margin-left: -280px;
+      text-align: center;
+    }
+  
+    .navbar-collapse .nav-link {
+      font-size: 20px;
+      height: 10px;
+      gap: 5px;
+      text-align: left;
+    }
+  
+    .navbar-collapse .navbar-nav {
+      gap: 5px;
+      margin-left: -10px;
+    }
+  
+    .navbar-toggled {
+      margin-bottom: 180px;
+    }
+  
+    .imgwithpara {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imgbg img {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  
+    .homebodypara {
+      margin-top: 20px;
+      margin-right: 20px;
+      text-align: center;
+    }
+  
+    .homebodyabout h1 {
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  
