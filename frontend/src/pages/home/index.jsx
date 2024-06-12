@@ -2,8 +2,9 @@ import React from 'react'
 import NavBar from '../../components/Navbar'
 import timer from '../../assets/timer.mp4'
 import japan from '../../assets/japan.jpg'
-
+import Footer from '../../components/Footer'
 import './Home.css';
+
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         <NavBar />
 
         {/* Video */}
-
+        <br/><br/><br/>
         <div className="homevideo">
           <video width="60%" controls controlsList="nodownload" style={{marginLeft:'300px' }}>
             
@@ -33,7 +34,7 @@ const Home = () => {
 
           <br /><br /><br /><br />
         </div>
-        
+        <Footer />
     </div>
   )
 }
