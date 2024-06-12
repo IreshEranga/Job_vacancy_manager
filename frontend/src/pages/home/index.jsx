@@ -30,7 +30,7 @@ const Home = () => {
 
         <div className="bodycontainerhome">
           <div className="homebodyabout">
-            <h1>Excited to Work in <b>Japan ?</b> Discover Your Dream Job With Us!</h1><br /><br />
+            <h1>Excited to Work in <b>Japan ?</b> <br />Discover Your Dream Job With Us!</h1>
             <div className="imgwithpara">
               <p className='homebodypara'>Japan is a land of innovation, rich culture, and endless opportunities. Whether you’re drawn to the bustling cities, advanced technology, or serene landscapes, Japan offers a unique and fulfilling work environment. Embrace the chance to grow professionally while experiencing the distinctive blend of tradition and modernity that defines Japanese life. Explore diverse job openings across industries, and join a community of forward-thinking professionals. Your next adventure awaits in Japan—start your journey today!</p>
               <div className="imgbg">

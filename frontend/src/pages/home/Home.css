@@ -65,7 +65,7 @@
   }
   
   .card-custom:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust hover shadow properties if desired */
+    box-shadow: 0px 8px 16px rgba(4, 29, 113, 0.841); /* Adjust hover shadow properties if desired */
   }
   
 
@@ -138,6 +138,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 100px;
 }
 
 .footer-left, .footer-right {
@@ -198,7 +199,7 @@
   
   @keyframes move {
     0% { transform: translateX(0); }
-    50% { transform: translateX(5px); }
+    50% { transform: translateX(25px); }
     100% { transform: translateX(0); }
   }
   
