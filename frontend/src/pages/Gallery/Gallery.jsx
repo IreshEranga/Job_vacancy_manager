@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/Navbar';
-import Footer from "../../components/Footer.js";
+import FooterHome from '../../components/FooterHome'
 import './Gallery.css';
 
 
@@ -40,7 +40,7 @@ const Gallery = () => {
     
       return (
 
-        <div style={{backgroundColor:'black'}}>
+        <div style={{backgroundColor:'white'}}>
     
               <NavBar />
         <div className="gallery-container"><br></br>
@@ -64,7 +64,7 @@ const Gallery = () => {
           </div><br></br>*/}
         </div>
         </div><br/><br/>
-          <Footer />
+        <FooterHome/>
         </div>
      );
 };
