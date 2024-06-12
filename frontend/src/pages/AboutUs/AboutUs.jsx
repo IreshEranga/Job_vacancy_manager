@@ -1,13 +1,13 @@
 import React from "react";
 import NavBar from '../../components/Navbar'; 
 import './AboutUs.css';
-import Footer from "../../components/Footer.js";
+import FooterHome from '../../components/FooterHome'
 import { FaPhone, FaEnvelope, FaFacebookSquare, FaMapMarker } from 'react-icons/fa';
 
 
 const AboutUs = () => {
   return (
-        <div style={{backgroundColor:'black'}}>
+        <div style={{backgroundColor:'white'}}>
     
               <NavBar />
 
@@ -15,7 +15,7 @@ const AboutUs = () => {
             <div className="about-us-content">
                 <div className="restaurant-details"><br/>
                     <h1>ABOUT OUR COMPANY</h1><br></br>
-                    <p>Welcome to our Restaurant ! We strive to provide a unique dining experience for all our guests.
+                    <p>Welcome to our Company ! We strive to provide a unique dining experience for all our guests.
                     Our chefs are passionate about crafting delicious dishes using the freshest ingredients sourced locally whenever possible.
                     From appetizers to desserts, we aim to tantalize your taste buds with our diverse menu options.
                     At our restaurant, we believe in creating memorable moments for our customers, whether it's a romantic dinner for two or a lively gathering with friends and family.
@@ -44,7 +44,7 @@ const AboutUs = () => {
               </div>          
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
         </div><br/><br/>
-          <Footer />
+        <FooterHome/>
     </div>
   )
 }

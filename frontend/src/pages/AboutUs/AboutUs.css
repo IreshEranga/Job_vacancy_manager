@@ -1,71 +1,238 @@
+/* Base styles */
 .about-us-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     padding: 20px;
-}
-
-.about-us-content {
+  }
+  
+  .about-us-content {
     max-width: 1000px;
     text-align: center;
-}
-
-.restaurant-image {
-    width: 1000px;
+  }
+  
+  .restaurant-image {
+    width: 100%;
     max-width: 1000px;
     border-radius: 10px;
     margin-bottom: 25px;
     margin-top: 25px;
-}
-
-.restaurant-details {
+  }
+  
+  .restaurant-details {
     margin-bottom: 30px;
-}
-
-.restaurant-details h1 {
+  }
+  
+  .restaurant-details h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: rgb(212, 227, 244);
+    color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
-    font-style: bold;
-}
-
-.restaurant-details p {
-  color: rgb(234, 241, 190);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 28px;
-  font-style: bold;
-}
-
-.contact-details {
+    font-weight: bold;
+  }
+  
+  .restaurant-details p {
+    color: rgb(102, 110, 54);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .contact-details {
     border-top: 1px solid #ccc;
     padding-top: 20px;
-}
-
-.contact-details h2 {
+  }
+  
+  .contact-details h2 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: rgb(212, 227, 244);
+    color: rgb(77, 93, 111);
     font-family: 'Times New Roman', Times, serif;
-}
-
-.contact-details p {
+  }
+  
+  .contact-details p {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: rgb(96, 100, 104);
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: left;
-    font-style: bold;
+    font-weight: bold;
     margin-left: 300px;
-}
-
-.contact-details .icon {
+  }
+  
+  .contact-details .icon {
     vertical-align: middle; /* Align icons vertically */
-
-}
-
-.dot {
+  }
+  
+  .dot {
     margin-left: 5px;
-}
+  }
+  
+  .gmapframe {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Responsive styles */
+  
+  /* Extra small devices (phones, less than 600px) */
+  @media (max-width: 599px) {
+    .restaurant-details h1,
+    .contact-details h2 {
+      font-size: 2rem;
+    }
+  
+    .restaurant-details p {
+      font-size: 18px;
+    }
+  
+    .contact-details p {
+      font-size: 16px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .about-us-container {
+      padding: 10px;
+    }
+  
+    .about-us-content {
+      width: 100%;
+    }
+  
+    .restaurant-image {
+      width: 100%;
+    }
+  
+    .gmapframe {
+      width: 100%;
+    }
+  
+    .gmapframe iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .restaurant-details h1,
+    .contact-details h2 {
+      font-size: 2.5rem;
+    }
+  
+    .restaurant-details p {
+      font-size: 20px;
+    }
+  
+    .contact-details p {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .about-us-container {
+      padding: 15px;
+    }
+  
+    .about-us-content {
+      width: 100%;
+    }
+  
+    .restaurant-image {
+      width: 100%;
+    }
+  
+    .gmapframe {
+      width: 100%;
+    }
+  
+    .gmapframe iframe {
+      width: 100%;
+      height: 350px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .restaurant-details h1,
+    .contact-details h2 {
+      font-size: 3rem;
+    }
+  
+    .restaurant-details p {
+      font-size: 24px;
+    }
+  
+    .contact-details p {
+      font-size: 20px;
+      margin-left: 50px;
+      text-align: center;
+    }
+  
+    .about-us-container {
+      padding: 20px;
+    }
+  
+    .about-us-content {
+      width: 100%;
+    }
+  
+    .restaurant-image {
+      width: 100%;
+    }
+  
+    .gmapframe {
+      width: 100%;
+    }
+  
+    .gmapframe iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .restaurant-details h1,
+    .contact-details h2 {
+      font-size: 3.5rem;
+    }
+  
+    .restaurant-details p {
+      font-size: 28px;
+    }
+  
+    .contact-details p {
+      font-size: 20px;
+      margin-left: 300px;
+      text-align: left;
+    }
+  
+    .about-us-container {
+      padding: 20px;
+    }
+  
+    .about-us-content {
+      width: 1000px;
+    }
+  
+    .restaurant-image {
+      width: 100%;
+      max-width: 1000px;
+    }
+  
+    .gmapframe {
+      width: 100%;
+      max-width: 1000px;
+    }
+  
+    .gmapframe iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }  
