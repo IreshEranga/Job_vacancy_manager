@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from '../../components/Navbar'; 
-import Footer from "../../components/Footer.js";
+import FooterHome from "../../components/FooterHome";
 
 
 const Category = () => {
@@ -13,7 +13,7 @@ const Category = () => {
      
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
         </div><br/><br/>
-          <Footer />
+          <FooterHome />
     </div>
   )
 }
