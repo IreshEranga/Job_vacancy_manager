@@ -3,7 +3,11 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import japan from '../assets/japan.jpg';
+import aus from '../assets/Australia.avif';
+import uk from '../assets/uk.jpg';
+import Singapore from '../assets/Singapore.jpg';
 import '../pages/home/Home.css';
+
 
 function CompanyCard({ logo, title, description }) {
   return (
@@ -25,22 +29,22 @@ function CompanyCardList() {
   const companies = [
     {
       logo: japan,
-      title: 'Company One',
+      title: 'Japan',
       description: 'Description for Company One'
     },
     {
-      logo: 'path/to/company2logo.png',
-      title: 'Company Two',
+      logo: uk,
+      title: 'United Kingdom',
       description: 'Description for Company Two'
     },
     {
-        logo: 'path/to/company2logo.png',
-        title: 'Company Two',
+        logo: aus,
+        title: 'Australia',
         description: 'Description for Company Two'
       },
       {
-        logo: 'path/to/company2logo.png',
-        title: 'Company Two',
+        logo: Singapore,
+        title: 'Singapore',
         description: 'Description for Company Two'
       }
     // Add more companies as needed

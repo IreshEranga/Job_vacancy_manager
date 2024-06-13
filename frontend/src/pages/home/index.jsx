@@ -11,7 +11,7 @@ import systemsgo from '../../assets/systemsgo.png'
 import Jobcard from '../../components/JobCard'
 import FooterHome from '../../components/FooterHome'
 import CompanyCardList from '../../components/CompanyCard'
-
+import FormExample from './ContactForm';
 import './Home.css';
 
 const Home = () => {
@@ -63,6 +63,15 @@ const Home = () => {
 
           <center><h2>Our Companies</h2></center><br /><br />
           <CompanyCardList/><br /><br />
+
+          <div className="contact"><br></br><br></br>
+            <h2>Contact Us</h2>
+            <h1>STAY IN TOUCH</h1>
+            <div className="border"></div>
+              <br /><br />
+            <FormExample />
+          </div><br></br><br></br>
+
         </div>
         <FooterHome/>
     </div>
