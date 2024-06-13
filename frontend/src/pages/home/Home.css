@@ -364,4 +364,154 @@ input[type="search"] {
     }
   
   }
-  
+
+  /* Contact section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  color: #4d4d4d;
+}
+
+.contact h1 {
+  font-size: 50px;
+  color: rgb(162, 137, 94);
+}
+
+.contact .border {
+  border-bottom: 2px solid #5f5f5f;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #202020;
+  padding: 80px 100px;
+  border-radius: 20px;
+}
+
+.contact-form .form-label {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-form .form-control {
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form .submit-button {
+  width: 200px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 20px auto 0;
+}
+
+.contact-form .submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact h1 {
+    font-size: 32px;
+  }
+
+  .contact .border {
+    width: 80%;
+  }
+
+  .contact-form {
+    padding: 40px 20px;
+  }
+
+  .contact-form .submit-button {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact h1 {
+    font-size: 36px;
+  }
+
+  .contact .border {
+    width: 70%;
+  }
+
+  .contact-form {
+    padding: 60px 30px;
+  }
+
+  .contact-form .submit-button {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  .contact .border {
+    width: 60%;
+  }
+
+  .contact-form {
+    padding: 70px 50px;
+  }
+
+  .contact-form .submit-button {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contact h2 {
+    font-size: 40px;
+  }
+
+  .contact h1 {
+    font-size: 50px;
+  }
+
+  .contact .border {
+    width: 50%;
+  }
+
+  .contact-form {
+    padding: 80px 100px;
+  }
+
+  .contact-form .submit-button {
+    width: 200px;
+    margin-left: 0;
+  }
+}
