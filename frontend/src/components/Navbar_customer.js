@@ -1,75 +1,74 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import logo from '../assets/salics.jpg';
-import { LinkContainer } from 'react-router-bootstrap';
-import { FaShoppingCart, FaUser } from 'react-icons/fa';
-import { NavDropdown } from 'react-bootstrap';
-import { useAuthStore } from '../store/useAuthStore';
+import {LinkContainer} from 'react-router-bootstrap';
 
+import '../pages/home/Home.css'
 
-function Navbar_customer({ isAuthenticated, user }) {
-  const { logout } = useAuthStore((state) => ({
-    logout: state.logout,
-  }));
-  const handleLogout = () => {
-    localStorage.removeItem('customerLogin');
-    logout();
-    window.location.href = "/login";
+function NavBar({ isAuthenticated, user, logout }) {
+
+  const [isToggled, setIsToggled] = useState(false);
+
+  const handleToggleClick = () => {
+    setIsToggled(!isToggled);
   };
 
+  useEffect(() => {
+    const navbarCollapse = document.getElementById('navbarScroll');
+    if (isToggled) {
+      navbarCollapse.style.paddingBottom = '50px';
+    } else {
+      navbarCollapse.style.marginBottom = '0';
+    }
+  }, [isToggled]);
   return (
-    <Navbar bg="dark" expand="lg" className="bg-body-tertiary" style={{ fontSize: '25px', height: '150px' }}>
+    <Navbar bg="dark" expand="lg" className={`bg-body-tertiary ${isToggled ? 'navbar-toggled' : ''}`} style={{ fontSize: '25px' , height:'130px' }}>
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src={logo} alt="logo" width={'140px'} height={'120px'} />
+          <img className='logoimg' src={logo} alt="logo" style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px',width:'140px', height:'100px'}}/>
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggleClick}/>
+        <Navbar.Collapse id="navbarScroll" style={{marginLeft:'200px'}}>
 
-          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '60px', textAlign: 'left'}} navbarScroll>
-            <LinkContainer to="/customer">
+          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }} navbarScroll>
+          <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/customer_menu">
-              <Nav.Link>Menu</Nav.Link>
+            <LinkContainer to="/vacancy">
+              <Nav.Link>Vacancies</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/customer_reservations">
-              <Nav.Link style={{ marginRight: '100px' }}>Reservations</Nav.Link>
+            <LinkContainer to="/about-us">
+              <Nav.Link>About</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/view_cart">
-              <Nav.Link style={{ marginLeft: '200px' }}>
-                <FaShoppingCart size={24} />
-              </Nav.Link>
+            <LinkContainer to="/gallery">
+              <Nav.Link>Gallery</Nav.Link>
             </LinkContainer>
-            <NavDropdown title={<FaUser size={24} />} id="basic-nav-dropdown">
-              <LinkContainer to="/view_profile">
-                <NavDropdown.Item>View Profile</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/edit_profile">
-                <NavDropdown.Item>Edit Profile</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/membership">
-                <NavDropdown.Item>Membership</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/view_orders">
-                <NavDropdown.Item>Orders</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/view_reservations">
-                <NavDropdown.Item>Reservations</NavDropdown.Item>
-              </LinkContainer>
-              <NavDropdown.Divider />
-              <LinkContainer to="/logout">
-                <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
-              </LinkContainer>
-            </NavDropdown>
           </Nav>
+
+          {/* <div className="container d-flex flex-column align-items-center">
+            {!isAuthenticated ? (
+              <Button variant="primary" className="m-2" href="/login" style={{marginLeft:'50px', width:'100px', height:'40px'}}>
+                Login
+              </Button>
+            ) : (
+              <div className="flex-row d-flex justify-content-center mt-5 w-100">
+                <Button variant="primary" className="col-2 m-2 btnlog" href={user.role === 'ADMIN' ? '/admin' : '/supplier'}>
+                  Dashboard
+                </Button>
+                <Button variant="primary" className="col-2 m-2" onClick={logout}>
+                  Logout
+                </Button>
+              </div>
+            )}
+          </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default Navbar_customer;
+export default NavBar;
