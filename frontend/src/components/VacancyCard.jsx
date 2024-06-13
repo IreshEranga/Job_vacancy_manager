@@ -10,7 +10,7 @@ function VacancyCard() {
     <div className='vacancycard'>
       <Row xs={1} md={1} className="g-4">
         <Col>
-        <Button variant="primary">Apply</Button>
+        <Button className='applybtn' variant="primary">Apply</Button>
             
           <Card className="card-custom">
           <center><h1 className="categoryjob">Hotel</h1></center>
