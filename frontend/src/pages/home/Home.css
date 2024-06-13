@@ -252,7 +252,7 @@ input[type="search"] {
   background-color: rgb(7, 23, 56);
   padding: 10px 0;
   color: white;
-  border-radius: 20px;
+  /*border-radius: 10px;*/
 }
 
 
