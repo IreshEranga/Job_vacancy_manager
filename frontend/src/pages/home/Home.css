@@ -248,6 +248,13 @@ input[type="search"] {
   height: 20px;
 }
 
+.categoryjob{
+  background-color: rgb(7, 23, 56);
+  padding: 10px 0;
+  color: white;
+  border-radius: 20px;
+}
+
 
 @media (min-width: 600px) {
   .footer-content {
