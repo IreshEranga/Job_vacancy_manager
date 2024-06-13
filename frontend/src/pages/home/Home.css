@@ -323,5 +323,9 @@
       /*flex-direction: row;*/
       padding: 0;
     }
+
+    .vacancycard{
+      margin: 0 15px;
+    }
   }
   
