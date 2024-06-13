@@ -16,7 +16,7 @@ const Category = () => {
                     id="search"
                     //value={}
                     //onChange={}
-                    placeholder="Search by Name , Employee ID or Address"
+                    placeholder="Search Job by category or name"
                     //style={{ width: "420px", border: '1px solid gray', padding: '20px', borderRadius: '30px', position:'relative', marginLeft:'600px', marginTop:'0', zIndex:'1', height:'20px' }}
                   />
             <div className="about-us-container">
