@@ -6,6 +6,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 
+const vacancyRoutes = require("./routes/vacancyRoutes");
+
 
 // express app
 const app = express();
@@ -21,6 +23,10 @@ app.use(bodyParser.json());
 // cors
 app.use(cors());
 
+
+//routes
+
+app.use("/api",vacancyRoutes);
 
 // connect to db
 mongoose
