@@ -14,7 +14,7 @@ const AddVacancy = () => {
     title: "",
     category: "",
     description: "",
-    requirements: "",
+    requirments: "",
   });
 
   const handleChange = (e) => {
@@ -30,7 +30,7 @@ const AddVacancy = () => {
     if (!data.title.trim()) errors.title = "Title is required";
     if (!data.category.trim()) errors.category = "Category is required";
     if (!data.description.trim()) errors.description = "Description is required";
-    if (!data.requirements.trim()) errors.requirements = "Requirements are required";
+    if (!data.requirments.trim()) errors.requirments = "Requirements are required";
     return errors;
   };
 
@@ -44,11 +44,11 @@ const AddVacancy = () => {
         console.log(response.data);
         toast.success('Vacancy added successfully!');
         setTimeout(() => {
-          navigate("/vacancies"); // Navigate to the vacancies list page after a delay
-        }, 1000); // Adjust the delay time as needed
+          navigate("/admin");
+        }, 1000);
       } catch (error) {
-        console.error("Error adding vacancy:", error);
-        toast.error('Error adding vacancy!');
+        console.error("Error adding vacancy:", error.response?.data || error.message);
+        toast.error(`Error adding vacancy: ${error.response?.data?.message || error.message}`);
       } finally {
         setLoading(false);
       }
@@ -104,18 +104,18 @@ const AddVacancy = () => {
           <Form.Control.Feedback type="invalid">{errors.description}</Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group controlId="requirements" style={{ marginBottom: '20px' }}>
+        <Form.Group controlId="requirments" style={{ marginBottom: '20px' }}>
           <Form.Label>Requirements</Form.Label>
           <Form.Control
             as="textarea"
-            name="requirements"
-            value={formData.requirements}
+            name="requirments"
+            value={formData.requirments}
             onChange={handleChange}
-            isInvalid={!!errors.requirements}
+            isInvalid={!!errors.requirments}
             required
             rows={4}
           />
-          <Form.Control.Feedback type="invalid">{errors.requirements}</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid">{errors.requirments}</Form.Control.Feedback>
         </Form.Group>
 
         <Button variant="primary" type="submit" style={{ width: '100%', padding: '10px', borderRadius: '5px' }} disabled={loading}>
