@@ -194,7 +194,7 @@ const AddVacancy = () => {
     if (Object.keys(errorsObj).length === 0) {
       setLoading(true);
       try {
-        const response = await axios.post("http://localhost:8000/api/vacancies", formData);
+        const response = await axios.post("https://job-vacancy-manager.onrender.com/api/vacancies", formData);
         console.log(response.data);
         toast.success('Vacancy added successfully!');
         setTimeout(() => {
