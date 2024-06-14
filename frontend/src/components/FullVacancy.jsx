@@ -9,6 +9,7 @@ import FooterHome from "./FooterHome";
 import '../pages/home/Home.css';
 import toast from 'react-hot-toast';
 
+
 const FullVacancy = () => {
   const { id } = useParams();
   const [vacancy, setVacancy] = useState(null);
@@ -69,7 +70,7 @@ const handleSubmit = async (e) => {
     setResult("Sending....");
   
     const formData = new FormData(e.target);
-    formData.append("access_key", "26c9dd63-75dc-4f2d-8fb9-c534cdf36573");
+    formData.append("access_key", "f5cd2950-f856-4e23-b601-20c62c4cdc17");
   
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -121,7 +122,11 @@ const handleSubmit = async (e) => {
             </Card.Text>
             <Card.Text>
               <b>Requirements</b> <br />
-              {vacancy.requirments}
+              <ul>
+                {vacancy.requirments.map((req, index) => (
+                  <li key={index}>{req}</li>
+                ))}
+              </ul>
             </Card.Text>
             <Button variant="primary" onClick={handleApplyNow}>Apply Now</Button>
           </Card.Body>
