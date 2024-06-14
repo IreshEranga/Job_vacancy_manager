@@ -54,6 +54,7 @@ const vacancyController = {
             const savedVacancy = await newVacancy.save();
             res.status(201).json(savedVacancy);
         } catch (error) {
+            console.error('Error creating vacancy:', error);
             res.status(500).json({ message: error.message });
         }
     },
