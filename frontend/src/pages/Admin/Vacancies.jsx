@@ -271,7 +271,7 @@ const Vacancies = () => {
 
   const fetchVacancies = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/vacancies");
+      const response = await axios.get("https://job-vacancy-manager.onrender.com/api/vacancies");
       setVacancies(response.data);
       setFilteredVacancies(response.data);
     } catch (error) {
@@ -333,7 +333,7 @@ const Vacancies = () => {
       if (editVacancy) {
         try {
           const updatedVacancy = { ...editVacancy, ...formData };
-          await axios.put(`http://localhost:8000/api/vacancies/${editVacancy._id}`, updatedVacancy);
+          await axios.put(`https://job-vacancy-manager.onrender.com/api/vacancies/${editVacancy._id}`, updatedVacancy);
           toast.success('Vacancy updated successfully!');
           setEditVacancy(null);
           fetchVacancies();
@@ -350,7 +350,7 @@ const Vacancies = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/vacancies/${id}`);
+      await axios.delete(`https://job-vacancy-manager.onrender.com/api/vacancies/${id}`);
       fetchVacancies();
       toast.success('Vacancy deleted successfully!');
     } catch (error) {
