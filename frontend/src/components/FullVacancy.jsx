@@ -18,7 +18,7 @@ const FullVacancy = () => {
   const [result, setResult] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/vacancies/${id}`)
+    fetch(`https://job-vacancy-manager.onrender.com/api/vacancies/${id}`)
       .then(response => {
         if (!response.ok) {
           return response.text().then(text => { throw new Error(text) });
