@@ -238,12 +238,12 @@
 
 /* Input search styles */
 input[type="search"] {
-  width: 420px;
+  width: 400px;
   border: 1px solid gray;
   padding: 20px;
   border-radius: 30px;
   position: relative;
-  margin-left: 600px;
+  margin-left: 400px;
   margin-top: 0;
   z-index: 1;
   height: 20px;

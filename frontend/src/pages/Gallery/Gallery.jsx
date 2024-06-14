@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../../components/Navbar';
+import NavBar from '../../components/Navbar_customer';
 import FooterHome from '../../components/FooterHome'
 import './Gallery.css';
 
