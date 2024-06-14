@@ -147,6 +147,7 @@ const Category = () => {
   return (
     <div style={{ backgroundColor: 'white' }}>
       <NavBar />
+      
       <input
         type="search"
         name="search"

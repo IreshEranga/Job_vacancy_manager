@@ -6,6 +6,7 @@ import Home from '../pages/home';
 import Vacancy from '../pages/Vacancy/Category';
 import Gallery from '../pages/Gallery/Gallery';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import FullVacancy from '../components/FullVacancy';
 
 
 const AppRoutes = () => {
@@ -15,6 +16,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/vacancy" element={<Vacancy />} />
+                <Route path="/vacancy/:id" element={<FullVacancy />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/about-us" element={<AboutUs />} />              
             </Routes>

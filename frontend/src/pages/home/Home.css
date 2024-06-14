@@ -266,6 +266,18 @@ input[type="search"] {
 }
 
 
+/*full job details*/
+.fulljobdetails{
+  width: 70%;
+  /* align-items: center; */
+  margin-top: 50px;
+}
+
+.fulljobbody{
+  text-align: left;
+}
+
+
 @media (min-width: 600px) {
   .footer-content {
     flex-direction: row;
