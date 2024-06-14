@@ -1,18 +1,3 @@
-// const Vacancy = require("../models/Vacancy");
-
-// const vacancyController = {
-
-//     //get all vacancies
-//     getVacancies: async(req,res) => {
-//         try{
-
-//         }
-//     }
-// };
-
-// module.exports = vacancyController;
-
-
 const Vacancy = require("../models/Vacancy");
 
 const vacancyController = {
@@ -78,6 +63,16 @@ const vacancyController = {
             res.status(200).json({ message: "Vacancy deleted successfully" });
         } catch (error) {
             res.status(500).json({ message: error.message });
+        }
+    },
+
+    getVacancyCount: async (req, res) => {
+        try {
+            const count = await Vacancy.countDocuments();
+            res.status(200).json({ count });
+        } catch (error) {
+            console.error('Error fetching vacancy count:', error);
+            res.status(500).json({ message: "Error fetching vacancy count" });
         }
     }
 };

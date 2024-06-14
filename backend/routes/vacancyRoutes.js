@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const vacancyController = require("../controllers/vacancyController");
 
+
 // Get all vacancies
 router.get("/vacancies", vacancyController.getVacancies);
 
@@ -19,5 +20,9 @@ router.put("/vacancies/:id", vacancyController.updateVacancy);
 
 // Delete a vacancy by ID
 router.delete("/vacancies/:id", vacancyController.deleteVacancy);
+
+// Get total vacancy count
+router.get("/vacancies/count", vacancyController.getVacancyCount);
+
 
 module.exports = router;
