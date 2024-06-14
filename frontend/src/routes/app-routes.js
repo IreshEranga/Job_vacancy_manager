@@ -9,6 +9,7 @@ import AboutUs from '../pages/AboutUs/AboutUs';
 import FullVacancy from '../components/FullVacancy';
 import AdminSideBar from '../pages/Admin/AdminSideBar';
 import AddVacancy from '../pages/Admin/AddVacancy';
+import LogIn from '../pages/Login/Login';
 
 
 const AppRoutes = () => {
@@ -23,6 +24,7 @@ const AppRoutes = () => {
                 <Route path="/about-us" element={<AboutUs />} /> 
                 <Route path="/admin" element={<AdminSideBar />} />             
                 <Route path="/add-vacancy" element={<AddVacancy />} />             
+                <Route path="/login" element={<LogIn />} />             
             </Routes>
         </Router>
     </>
