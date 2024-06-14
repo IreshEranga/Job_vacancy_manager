@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import SALICSLOGO from "../../assets/salics.jpg";
-//import { FiLogOut } from "react-icons/fi";
-//import { useAuthStore } from "../../../store/useAuthStore";
+import { FiLogOut } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+// import { useAuthStore } from "../../../store/useAuthStore";
 import Vacancies from './Vacancies.jsx';
-//import Applications from "./Applications.jsx";
+// import Applications from "./Applications.jsx";
 import AdminDashboard from "./AdminDashboard.jsx";
 
 
 const AdminSideBar = () => {
   const [activeContent, setActiveContent] = useState("Dashboard");
-  
+  const navigate = useNavigate(); // Initialize useNavigate
+
   const handleLinkClick = (content) => {
     setActiveContent(content);
   };
-  
-  /*const { logout } = useAuthStore((state) => ({
+
+  /* const { logout } = useAuthStore((state) => ({
     logout: state.logout,
-  }));*/
+  })); */
 
   const renderContent = () => {
     switch (activeContent) {
@@ -32,12 +34,12 @@ const AdminSideBar = () => {
             <Vacancies />
           </>
         );
-      /*case "Applications":
+      /* case "Applications":
         return (
           <>
             <Applications />
           </>
-        );*/
+        ); */
       case "Account":
         return <p>This is the Account page content.</p>;
       default:
@@ -50,11 +52,14 @@ const AdminSideBar = () => {
   };
 
   // Function to handle logout logic
-  /*const handleLogout = () => {
-    logout();
-    window.location.href = "/login";
-  };*/
-  
+  const handleLogout = () => {
+    // Perform logout logic (e.g., clear local storage, reset authentication state)
+    // Assuming `logout` function performs necessary logout actions
+
+    // Use navigate to redirect to the login page
+    navigate('/login');
+  };
+
   return (
     <div className="d-flex" style={{ height: "100vh" }}>
       <div
@@ -95,7 +100,7 @@ const AdminSideBar = () => {
               Vacancies
             </a>
           </li>
-          {/*<li>
+          {/* <li>
             <a
               href="#applications"
               className={`nav-link ${
@@ -105,16 +110,16 @@ const AdminSideBar = () => {
             >
               Applications
             </a>
-          </li>*/}
+          </li> */}
         </ul>
-        {/*<div className="mt-auto">
+        <div className="mt-auto">
           <button
             className="btn btn-dark w-100 d-flex align-items-center justify-content-center"
             onClick={handleLogout}
           >
             <FiLogOut className="me-2" /> Logout
           </button>
-        </div>*/}
+        </div>
       </div>
       <div className="flex-grow-1 p-4" style={{ overflowY: "auto" }}>
         {renderContent()}
