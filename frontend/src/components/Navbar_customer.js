@@ -25,10 +25,10 @@ function NavBar({ isAuthenticated, user, logout }) {
     }
   }, [isToggled]);
   return (
-    <Navbar bg="dark" expand="lg" className={`bg-body-tertiary ${isToggled ? 'navbar-toggled' : ''}`} style={{ fontSize: '25px' , height:'130px' }}>
+    <Navbar bg="dark" expand="lg" className={`bg-body-tertiary ${isToggled ? 'navbar-toggled' : ''}`} style={{ fontSize: '25px' , height:'120px' }}>
       <Container fluid>
         <Navbar.Brand href="#">
-          <img className='logoimg' src={logo} alt="logo" style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px',width:'140px', height:'100px'}}/>
+          <img className='logoimg' src={logo} alt="logo" style={{borderTopLeftRadius:'25px', borderBottomRightRadius:'25px',width:'120px', height:'80px', marginLeft:'10px'}}/>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggleClick}/>

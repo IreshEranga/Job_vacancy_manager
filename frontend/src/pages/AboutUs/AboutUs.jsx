@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from '../../components/Navbar'; 
+import NavBar from '../../components/Navbar_customer'; 
 import './AboutUs.css';
 import FooterHome from '../../components/FooterHome'
 import { FaPhone, FaEnvelope, FaFacebookSquare, FaMapMarker } from 'react-icons/fa';
@@ -15,11 +15,7 @@ const AboutUs = () => {
             <div className="about-us-content">
                 <div className="restaurant-details"><br/>
                     <h1>ABOUT OUR COMPANY</h1><br></br>
-                    <p>Welcome to our Company ! We strive to provide a unique dining experience for all our guests.
-                    Our chefs are passionate about crafting delicious dishes using the freshest ingredients sourced locally whenever possible.
-                    From appetizers to desserts, we aim to tantalize your taste buds with our diverse menu options.
-                    At our restaurant, we believe in creating memorable moments for our customers, whether it's a romantic dinner for two or a lively gathering with friends and family.
-                    Come join us and embark on a culinary journey that promises to delight your senses.</p>
+                    <p>Salics is a dynamic and innovative company at the forefront of the tech industry, specializing in cutting-edge solutions for a variety of business needs. We are currently seeking passionate and talented individuals to join our team. At Salics, we pride ourselves on fostering a collaborative and inclusive work environment that encourages creativity and professional growth. Our team members are driven by a shared commitment to excellence and a desire to make a meaningful impact through their work. If you are eager to contribute to a company that values innovation and integrity, we invite you to explore our current job vacancies and consider becoming a part of our exciting journey.</p>
                 </div><br></br>
 
                 <div className="contact-details"><br></br>
@@ -28,10 +24,10 @@ const AboutUs = () => {
                   <FaPhone className="icon" /><span className="dot"> :  </span><a href="tel:+94772120231" className="contact-link"> +94 772120231</a>
                 </p>
                 <p className="contactme">
-                  <FaEnvelope className="icon" /><span className="dot"> :  </span><a href="mailto:emeraldbayresortmirissa@gmail.com" className="contact-link"> emeraldbayresortmirissa@gmail.com</a>
+                  <FaEnvelope className="icon" /><span className="dot"> :  </span><a href="mailto:salicshokkaido@gmail.com" className="contact-link"> salicshokkaido@gmail.com</a>
                 </p>
                 <p>
-                  <FaFacebookSquare className="icon" /><span className="dot"> :  </span><a href="https://www.facebook.com/profile.php?id=61552540748705&mibextid=LQQJ4d" className="social-link"> Emerald Bay Resort</a>
+                  <FaFacebookSquare className="icon" /><span className="dot"> :  </span><a href="https://www.facebook.com/profile.php?id=61552540748705&mibextid=LQQJ4d" className="social-link"> Salics</a>
                 </p>
                 <p>
                   <FaMapMarker className="icon" /> <span className="dot"> :  </span> Badugoda Junction, Harbour Road, Mirissa, Sri Lanka.
