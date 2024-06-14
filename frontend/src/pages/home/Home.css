@@ -362,9 +362,13 @@ input[type="search"] {
     }
 
     .vacancycard{
-      margin: 0 15px;
+      margin: 20px 15px 0 15px;
     }
 
+    .vccardimg{
+      width: 200px;
+      height: 200px;
+    }
     input[type="search"] {
       width: 80%;
       margin-left: 50px;
