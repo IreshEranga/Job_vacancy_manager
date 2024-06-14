@@ -75,7 +75,7 @@ const Category = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/vacancies")
+    fetch("https://job-vacancy-manager.onrender.com/api/vacancies")
       .then(response => {
         if (!response.ok) {
           return response.text().then(text => { throw new Error(text) });
