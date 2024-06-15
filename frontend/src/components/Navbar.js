@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import logo from '../assets/salics.jpg';
 import {LinkContainer} from 'react-router-bootstrap';
 
@@ -34,7 +33,7 @@ function NavBar({ isAuthenticated, user, logout }) {
         <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggleClick}/>
         <Navbar.Collapse id="navbarScroll" style={{marginLeft:'200px'}}>
 
-          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }} navbarScroll>
+          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }}>
           <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
@@ -49,7 +48,7 @@ function NavBar({ isAuthenticated, user, logout }) {
             </LinkContainer>
           </Nav>
 
-          <div className="container d-flex flex-column align-items-center">
+          {/* <div className="container d-flex flex-column align-items-center">
             {!isAuthenticated ? (
               <Button variant="primary" className="m-2" href="/login" style={{marginLeft:'50px', width:'100px', height:'40px'}}>
                 Login
@@ -64,7 +63,7 @@ function NavBar({ isAuthenticated, user, logout }) {
                 </Button>
               </div>
             )}
-          </div>
+          </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

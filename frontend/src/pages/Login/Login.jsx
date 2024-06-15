@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MDBContainer, MDBInput, MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit';
 import NavBar from "../../components/Navbar_customer.js";
-
+import '../home/Home.css'
 
 function LogIn() {
   const navigate = useNavigate();
@@ -27,8 +27,9 @@ function LogIn() {
   };
 
   return (
-    <div>
+    <div >
         <NavBar/>
+        <div className='loginpageform'>
         <MDBContainer className="p-3 my-5 d-flex flex-column w-50" style={{backgroundColor:'rgba(4, 29, 113, 0.841)', color:'white'}}>
       <MDBInput
         wrapperClass='mb-4'
@@ -56,6 +57,7 @@ function LogIn() {
 
       <MDBBtn className="mb-4" onClick={handleLogin}>Sign in</MDBBtn>
     </MDBContainer>
+    </div>
     </div>
   );
 }

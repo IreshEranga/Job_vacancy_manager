@@ -169,6 +169,11 @@
   margin-top: 20px;
 }
 
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Company card */
 .card-custom-company {
   position: relative;
@@ -244,7 +249,7 @@ input[type="search"] {
   border-radius: 30px;
   position: relative;
   margin-left: 400px;
-  margin-top: 0;
+  margin-top: 20px;
   z-index: 1;
   height: 20px;
 }
@@ -276,6 +281,8 @@ input[type="search"] {
 .fulljobbody{
   text-align: left;
 }
+
+
 
 
 @media (min-width: 600px) {
@@ -387,6 +394,9 @@ input[type="search"] {
       padding: 10px;
       height: auto;
       border-radius: 15px;
+    }
+    .loginpageform{
+      margin-top: 200px;
     }
   
   }

@@ -34,7 +34,7 @@ function NavBar({ isAuthenticated, user, logout }) {
         <Navbar.Toggle aria-controls="navbarScroll" onClick={handleToggleClick}/>
         <Navbar.Collapse id="navbarScroll" style={{marginLeft:'200px'}}>
 
-          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }} navbarScroll>
+          <Nav className="me-auto my-2 my-lg-0 ms-auto" style={{ maxHeight: '100px', gap: '40px', textAlign: 'left' }}>
           <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>

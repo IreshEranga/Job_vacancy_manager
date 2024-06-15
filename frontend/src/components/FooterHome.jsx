@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; {currentYear} SALICS. All rights reserved.</p><br />
-        Powered By <b>VERTEX</b>
+        <a href="/login">Powered By</a> <b>VERTEX</b>
       </div>
     </footer>
   );
